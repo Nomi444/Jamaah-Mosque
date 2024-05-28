@@ -1,12 +1,11 @@
 /* general */
 
-
 body {
-    font-family: "El Messiri", sans-serif;
+  font-family: "El Messiri", sans-serif;
 }
 
-.bg-color-primary{
-    background-color: #db9e30 !important;
+.bg-color-primary {
+  background-color: #db9e30 !important;
 }
 
 /*
@@ -19,58 +18,117 @@ Header Area Navbar
     color: #db9e30 !important;
 } */
 
-.nav-link{
-    color: inherit;
+.nav-link {
+  color: inherit;
+}
+
+.items-set {
+  color: #817b70 !important;
+}
+
+.primary-color {
+  color: #db9e30 !important;
+}
+
+.my-nav {
+  z-index: 2;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.set-background {
+  position: relative;
+  background-image: url("images/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+
 }
 
 
-.items-set{
-    color: #817b70 !important;
+.set-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+  z-index: 1;
 }
 
-.primary-color{
-    color: #db9e30 !important;
+.set-background > * {
+  position: relative;
+  z-index: 2;
 }
 
-.my-nav{
-    z-index: 2;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
+/* .overlay {
+  position: absolute;
+  /* top: 0;
+    left: 0; */
+  /* width: 100%;
+    height: 100%; */
+  
 
-.set-background{
-    position: relative;
-    background-image: url('images/bg-home.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+.pt-12 {
+  padding-top: 230px;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with 50% opacity */
-    z-index: 1;
-}
-
 
 .divider-svg {
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 10px;
-    z-index: 2;
+  width: 180px;
+  height: 10px;
+  z-index: 2;
+}
+
+.setting-text {
+  /* position: relative; */
+  z-index: 5;
+}
+
+/* main section */
+
+.font-change {
+  font-family: "PT Sans", sans-serif;;
+}
+
+.change-color {
+  color: #817b70;
+}
+
+.paragraph-font {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* card setting */
+
+.card {
+  background-color: #faf0e0;
+}
+
+/* .card-subtitle {
+  font-family: "PT Sans", sans-serif;
+} */
+
+.set-date {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* hero-section */
+
+.hero-section{
+  background: #fffcf6;
+  background-image: url("images/bg-section-featuredsermons.png");
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+.p-10{
+  padding: 6rem;
 }
 
 
- .setting-text {
-            position: relative;
-            z-index: 3;
-        } 
+.mt-10{
+  margin-top: 50px;
+}
