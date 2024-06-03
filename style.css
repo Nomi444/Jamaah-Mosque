@@ -44,9 +44,7 @@ Header Area Navbar
   background-size: cover;
   background-position: center;
   height: 95vh;
-
 }
-
 
 .set-background::before {
   content: "";
@@ -68,9 +66,8 @@ Header Area Navbar
   position: absolute;
   /* top: 0;
     left: 0; */
-  /* width: 100%;
+/* width: 100%;
     height: 100%; */
-  
 
 .pt-12 {
   padding-top: 230px;
@@ -90,7 +87,7 @@ Header Area Navbar
 /* main section */
 
 .font-change {
-  font-family: "PT Sans", sans-serif;;
+  font-family: "PT Sans", sans-serif;
 }
 
 .change-color {
@@ -117,18 +114,90 @@ Header Area Navbar
 
 /* hero-section */
 
-.hero-section{
+.hero-section {
   background: #fffcf6;
   background-image: url("images/bg-section-featuredsermons.png");
   /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
 }
-.p-10{
+
+/* @media (min-width: 780){
+  
+  
+} */
+
+.p-10 {
   padding: 5rem;
 }
 
-
-/* .mt-10{
+.mt-10 {
   margin-top: 50px;
+}
+
+/* small section */
+
+.small-section {
+  background-color: #fffcf6;
+}
+
+.pt-15 {
+  padding-top: 90px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* upcoming events */
+.responsive-text {
+  font-size: 1.5rem;
+}
+
+/* Footer area */
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("images/bg-footers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: clip;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  width: 100vw;
+}
+
+input::placeholder{
+  color: #817B70 !important;
+}
+
+.footer-line{
+  border-top: 1px solid #817B70;
+}
+
+.mt-11{
+  margin-top: 14rem;
+}
+/* .set-padding{
+  padding: 3rem;
 } */
+
+.below-padding{
+  padding: 3rem;
+}
+
+.mb-10{
+  margin-bottom: 9rem;
+}
+
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+  .footer{
+    text-align: start;
+  }
+}
